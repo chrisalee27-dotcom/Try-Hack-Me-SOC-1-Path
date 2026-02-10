@@ -23,8 +23,6 @@ You analyze a provided PCAP file and logs to spot the attack chain using **Wires
 - Read about MITM basics: why it's dangerous (interception without detection), common vectors, and real-world impact.
 - Understood MITRE ATT&CK ties (e.g., T1557 – Adversary-in-the-Middle).
 
-No questions — foundational theory.
-
 ### Task 2: Lab Connection
 - Deployed the lab environment
 - Opened Wireshark with the provided capture file (PCAP)
@@ -49,7 +47,7 @@ Key takeaway: MITM often chains techniques — detect early to stop escalation.
 - ARP has no authentication — easy to poison ARP tables
 - Look for duplicate responses or gratuitous ARPs claiming ownership
   
-**Lab Questions
+**Lab Questions**
 - How many ARP packets from the gateway MAC Address were observed?  10
 - What MAC address was used by the attacker to impersonate the gateway?  02:fe:fe:fe:55:55
 - How many Gratuitous ARP replies were observed for 192.168.10.1? 2
@@ -73,7 +71,7 @@ Key takeaway: MITM often chains techniques — detect early to stop escalation.
 - DNS spoofing redirects victims to attacker-controlled hosts
 - Compare expected vs. observed A records for internal resources
   
-**Lab Questions
+**Lab Questions**
 -How many DNS responses were observed for the domain corp-login.acme-corp.local? 211
 -How many DNS requests were observed from the IPs other than 8.8.8.8? 2
 -What IP did the attacker’s forged DNS response return for the domain? 192.168.10.55
@@ -102,7 +100,7 @@ Key takeaway: MITM often chains techniques — detect early to stop escalation.
 - Follow TCP/HTTP streams to recover leaked data
 - Full MITM detection requires piecing together protocol abuses
   
-**Lab Questions
+**Lab Questions**
 -How many POST requests were observed for our domain corp-login.acme-corp.local? 1
 -What's the password of the victim found in the plaintext after successful ssl stripping attack? Secret123!
 
