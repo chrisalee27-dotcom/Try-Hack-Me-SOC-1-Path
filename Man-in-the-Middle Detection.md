@@ -48,19 +48,20 @@ Key takeaway: MITM often chains techniques — detect early to stop escalation.
 **What I learned:**
 - ARP has no authentication — easy to poison ARP tables
 - Look for duplicate responses or gratuitous ARPs claiming ownership
+  
 **Lab Questions
 - How many ARP packets from the gateway MAC Address were observed?  10
 - What MAC address was used by the attacker to impersonate the gateway?  02:fe:fe:fe:55:55
 - How many Gratuitous ARP replies were observed for 192.168.10.1? 2
 - How many unique MAC addresses claimed the same IP (192.168.10.1)? 2
   
-<img width="779" height="294" alt="10 ARP from gateway MAC" src="https://github.com/user-attachments/assets/162903cd-4186-4d13-8369-96a4d0dde1e1" />
+<img width="400" height="200" alt="10 ARP from gateway MAC" src="https://github.com/user-attachments/assets/162903cd-4186-4d13-8369-96a4d0dde1e1" />
 
-<img width="779" height="294" alt="10 ARP from gateway MAC" src="https://github.com/user-attachments/assets/bac00238-88e4-4ea6-a6ce-6dfffe418f1e" />
+<img width="400" height="200" alt="10 ARP from gateway MAC" src="https://github.com/user-attachments/assets/bac00238-88e4-4ea6-a6ce-6dfffe418f1e" />
 
-<img width="964" height="247" alt="2 grat for ip" src="https://github.com/user-attachments/assets/fc88f165-4452-418a-a93d-78f3d78e979f" />
+<img width="400" height="200" alt="2 grat for ip" src="https://github.com/user-attachments/assets/fc88f165-4452-418a-a93d-78f3d78e979f" />
 
-<img width="951" height="685" alt="duplicate mac" src="https://github.com/user-attachments/assets/d744bb33-7bc6-43c5-9973-70bce9759ada" />
+<img width="400" height="200" alt="duplicate mac" src="https://github.com/user-attachments/assets/d744bb33-7bc6-43c5-9973-70bce9759ada" />
 
 ### Task 5: Unmasking DNS Spoofing
 - Applied DNS filters (e.g., `dns`)
@@ -71,22 +72,23 @@ Key takeaway: MITM often chains techniques — detect early to stop escalation.
 **What I learned:**
 - DNS spoofing redirects victims to attacker-controlled hosts
 - Compare expected vs. observed A records for internal resources
+  
 **Lab Questions
 -How many DNS responses were observed for the domain corp-login.acme-corp.local? 211
-How many DNS requests were observed from the IPs other than 8.8.8.8? 2
-What IP did the attacker’s forged DNS response return for the domain? 192.168.10.55
+-How many DNS requests were observed from the IPs other than 8.8.8.8? 2
+-What IP did the attacker’s forged DNS response return for the domain? 192.168.10.55
 
-<img width="890" height="590" alt="outlier ip" src="https://github.com/user-attachments/assets/21d2a9bc-00d7-4a25-8984-ddfd13ee5438" />
+<img width="400" height="200" alt="outlier ip" src="https://github.com/user-attachments/assets/21d2a9bc-00d7-4a25-8984-ddfd13ee5438" />
 
-<img width="857" height="565" alt="our ip 8 8 8 8" src="https://github.com/user-attachments/assets/0f4a1f38-911e-42dc-9d97-67e28a51ec95" />
+<img width="400" height="200" alt="our ip 8 8 8 8" src="https://github.com/user-attachments/assets/0f4a1f38-911e-42dc-9d97-67e28a51ec95" />
 
-<img width="848" height="729" alt="corp login name" src="https://github.com/user-attachments/assets/c6cbf9ea-c032-4471-ba6e-c1a4756a1ec0" />
+<img width="400" height="200" alt="corp login name" src="https://github.com/user-attachments/assets/c6cbf9ea-c032-4471-ba6e-c1a4756a1ec0" />
 
-<img width="872" height="808" alt="domain of interest" src="https://github.com/user-attachments/assets/bf1084fb-2b51-4d9e-a6ab-dccf2ec0e50d" />
+<img width="400" height="200" alt="domain of interest" src="https://github.com/user-attachments/assets/bf1084fb-2b51-4d9e-a6ab-dccf2ec0e50d" />
 
-<img width="896" height="791" alt="!" src="https://github.com/user-attachments/assets/9f388351-0742-4217-bb1a-0b179adb537d" />
+<img width="400" height="200" alt="!" src="https://github.com/user-attachments/assets/9f388351-0742-4217-bb1a-0b179adb537d" />
 
-<img width="912" height="818" alt="211" src="https://github.com/user-attachments/assets/fcd6af26-6d0d-4c11-ae26-92427231e028" />
+<img width="400" height="200" alt="211" src="https://github.com/user-attachments/assets/fcd6af26-6d0d-4c11-ae26-92427231e028" />
 
 ### Task 6: Detecting SSL Stripping / HTTPS Downgrade (and chained attack confirmation)
 - Filtered HTTP/HTTPS traffic (e.g., `http` or `tls`)
@@ -99,17 +101,18 @@ What IP did the attacker’s forged DNS response return for the domain? 192.168.
 - SSL stripping forces downgrade by stripping HTTPS → exposes creds
 - Follow TCP/HTTP streams to recover leaked data
 - Full MITM detection requires piecing together protocol abuses
+  
 **Lab Questions
 -How many POST requests were observed for our domain corp-login.acme-corp.local? 1
 -What's the password of the victim found in the plaintext after successful ssl stripping attack? Secret123!
 
-<img width="876" height="788" alt="TLS  SSL" src="https://github.com/user-attachments/assets/1bfb4321-057e-454a-88fa-49fe5d0aeb2b" />
+<img width="400" height="200" alt="TLS  SSL" src="https://github.com/user-attachments/assets/1bfb4321-057e-454a-88fa-49fe5d0aeb2b" />
 
-<img width="898" height="760" alt="established tls handshake" src="https://github.com/user-attachments/assets/064c734f-6ce0-4f86-b9f7-1e8c797f60e7" />
+<img width="400" height="200" alt="established tls handshake" src="https://github.com/user-attachments/assets/064c734f-6ce0-4f86-b9f7-1e8c797f60e7" />
 
-<img width="869" height="790" alt="isolage dns responses from the attacker" src="https://github.com/user-attachments/assets/77173643-a1ff-4e41-87ed-f15ed66c1861" />
+<img width="400" height="200" alt="isolage dns responses from the attacker" src="https://github.com/user-attachments/assets/77173643-a1ff-4e41-87ed-f15ed66c1861" />
 
-<img width="867" height="458" alt="ssl stripping login" src="https://github.com/user-attachments/assets/c0d5b93d-e0b5-4400-ad38-7124d3ceac82" />
+<img width="400" height="200" alt="ssl stripping login" src="https://github.com/user-attachments/assets/c0d5b93d-e0b5-4400-ad38-7124d3ceac82" />
 
 ## Key Takeaways & Skills Gained
 - Mastered Wireshark for MITM hunting: ARP, DNS, HTTP/TLS filters + stream following
