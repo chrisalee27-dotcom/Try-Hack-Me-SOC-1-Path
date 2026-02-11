@@ -78,8 +78,6 @@ Logging captured packets to disk for later analysis. Reading binary logs (`snort
 | 4  | `snort.log.1640048004` — Ack number of 8th packet?                                        | `0x38AFFFF3`                        |
 | 5  | `snort.log.1640048004` — TCP port 80 packets?                                             | `41`                                |
 
-<img width="711" height="289" alt="6 1" src="https://github.com/user-attachments/assets/9eed2193-13ce-456c-81aa-0f9eaf5c15d3" />
-
 <img width="823" height="505" alt="6 5 folders creation and unlocked" src="https://github.com/user-attachments/assets/cfea2b94-8e4d-419b-a7dc-53e6dcbd29e5" />
 
 <img width="823" height="313" alt="6 6" src="https://github.com/user-attachments/assets/acc6f4a9-8ba3-4ade-a0f5-e88dcf45af11" />
