@@ -55,15 +55,15 @@ Key takeaway: NIDS is ideal for broad network visibility; HIDS catches host-spec
 - Which protocol is defined in the sample rule created in the task? icmp
 - What is the file name that contains custom rules for Snort? local.rules
 
-<img width="200" height="100" alt="4 1 list the rules" src="https://github.com/user-attachments/assets/d57c3f28-9c22-4089-a201-d8260fed8aa9" />  
+<img width="400" height="200" alt="4 1 list the rules" src="https://github.com/user-attachments/assets/d57c3f28-9c22-4089-a201-d8260fed8aa9" />  
 
-<img width="200" height="100" alt="4 2 Open local rules in text editor" src="https://github.com/user-attachments/assets/6e0bc0cf-09ca-4675-a0bd-6b6b6f77cac8" />
+<img width="400" height="200" alt="4 2 Open local rules in text editor" src="https://github.com/user-attachments/assets/6e0bc0cf-09ca-4675-a0bd-6b6b6f77cac8" />
 
-<img width="200" height="100" alt="4 3 add new rule" src="https://github.com/user-attachments/assets/6fdea8d7-fdd6-4256-bfb5-b1094a6ac21c" />
+<img width="400" height="200" alt="4 3 add new rule" src="https://github.com/user-attachments/assets/6fdea8d7-fdd6-4256-bfb5-b1094a6ac21c" />
 
-<img width="200" height="100" alt="4 4 start snort tool" src="https://github.com/user-attachments/assets/c57d0968-cb73-414f-a7d0-842575a32906" />
+<img width="400" height="200" alt="4 4 start snort tool" src="https://github.com/user-attachments/assets/c57d0968-cb73-414f-a7d0-842575a32906" />
 
-<img width="200" height="100" alt="4 5 test rule" src="https://github.com/user-attachments/assets/88f3100b-9459-4f3e-8b22-de045d306f1d" />
+<img width="400" height="200" alt="4 5 test rule" src="https://github.com/user-attachments/assets/88f3100b-9459-4f3e-8b22-de045d306f1d" />
 
 ### Task 5: Practical Lab
 - Deployed the lab machine
@@ -82,7 +82,7 @@ Key takeaway: NIDS is ideal for broad network visibility; HIDS catches host-spec
 - What other rule message besides the SSH message is detected in the PCAP file? Ping Detected
 - What is the sid of the rule that detects SSH? 1000002
 
-<img width="200" height="100" alt="5 1" src="https://github.com/user-attachments/assets/b12386d5-4fd1-43e0-b797-798c10e977e4" />
+<img width="400" height="200" alt="5 1" src="https://github.com/user-attachments/assets/b12386d5-4fd1-43e0-b797-798c10e977e4" />
 
 
 ## Key Takeaways & Skills Gained
