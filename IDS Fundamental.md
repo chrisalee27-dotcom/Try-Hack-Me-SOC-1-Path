@@ -82,7 +82,8 @@ Key takeaway: NIDS is ideal for broad network visibility; HIDS catches host-spec
 - What other rule message besides the SSH message is detected in the PCAP file? Ping Detected
 - What is the sid of the rule that detects SSH? 1000002
 
-<img width="934" height="458" alt="5 1 run pcap" src="https://github.com/user-attachments/assets/6b866308-1cf3-4f72-bb65-08cffbe220f9" />
+<img width="200" height="100" alt="5 1" src="https://github.com/user-attachments/assets/b12386d5-4fd1-43e0-b797-798c10e977e4" />
+
 
 ## Key Takeaways & Skills Gained
 - Understood IDS as detection-focused (vs. prevention-focused IPS)
