@@ -66,8 +66,6 @@ Basic Snort installation check, version/build info, and how configuration files 
 **What I Learned:**  
 Snort as a real-time packet sniffer (like a lightweight tcpdump). Command-line flags (`-v`, `-d`, `-e`, etc.) to control verbosity, display data link layer, etc. Great for quick traffic inspection.
 
-<img width="760" height="188" alt="5 1 sudo snor -v -i eth0" src="https://github.com/user-attachments/assets/93e69177-fa9e-4d17-a119-956ad43f3012" />
-
 ## Task 6: Operation Mode 2 — Packet Logger Mode
 **What I Learned:**  
 Logging captured packets to disk for later analysis. Reading binary logs (`snort.log.*`) with Snort (`-r`), extracting fields like source ports, IP IDs, TCP ACKs, referers, and protocol stats. Builds foundation for offline forensics.
