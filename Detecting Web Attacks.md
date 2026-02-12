@@ -71,7 +71,7 @@ Switched to **Wireshark** on `traffic.pcap` for full packet-level visibility.
 Questions:
 - What password does the attacker successfully identify in the brute-force attack? **astrongpassword123**
 - What is the flag the attacker found in the database using SQLi? **THM{dumped_the_db}** 
-- 
+
 <img width="822" height="828" alt="5 1" src="https://github.com/user-attachments/assets/252188ab-3de6-4b3f-945c-71eecbda3c45" />
 
 <img width="663" height="641" alt="5 2" src="https://github.com/user-attachments/assets/31f1a1d1-57cd-4101-b45c-47cf2160e6c7" />
