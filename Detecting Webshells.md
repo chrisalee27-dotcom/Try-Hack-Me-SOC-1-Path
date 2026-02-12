@@ -90,7 +90,7 @@ Questions:
 
 <img width="725" height="459" alt="3 2" src="https://github.com/user-attachments/assets/cfd70d6c-e455-442a-9601-69c06067a94d" />
 
--What is the name of the .php file the attacker uses to upload the web shell? /wordpress
+-What is the name of the .php file the attacker uses to upload the web shell? upload_form.php
 
 <img width="971" height="195" alt="3 3" src="https://github.com/user-attachments/assets/fc1904d5-dce1-4adc-b8e0-7283154b5c71" />
 
@@ -101,16 +101,10 @@ Questions:
 -After gaining access via the web shell, the attacker uses a command to download a second file onto the server. What is the name of this file? linpeas.sh
 
 <img width="960" height="209" alt="3 5" src="https://github.com/user-attachments/assets/46eb7290-cd90-4f40-9cee-98a167bbfa57" />
-<img width="815" height="223" alt="3 6" src="https://github.com/user-attachments/assets/1eee777a-ca15-4816-bbcc-d856c6fecb13" />
 
 -The attacker has hidden a secret within the web shell. Use cat to investigate the web shell code and find the flag. linpeas.sh
 
-
-
-
-
-
-
+<img width="815" height="223" alt="3 6" src="https://github.com/user-attachments/assets/1eee777a-ca15-4816-bbcc-d856c6fecb13" />
 
 ## Final Thoughts
 
