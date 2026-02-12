@@ -32,9 +32,10 @@ Overview of why detecting web shells matters for SOC/IR teams — they're a top 
 **Key takeaway:** Web shells provide attackers with a simple, HTTP-based backdoor. They're language-agnostic but tied to the web server's interpreter (PHP most common).
 
 Questions:
+
 - Which MITRE ATT&CK Persistence sub-technique are web shells associated with? **T1505.003**
 - What file extension is commonly used for web shells targeting Microsoft Exchange? **.aspx**
-- 
+
 <img width="1452" height="514" alt="1 1" src="https://github.com/user-attachments/assets/a852dedf-0d8f-4e11-9b91-a685a4252792" />
 
 ### Task 3: Anatomy of a Web Shell
@@ -44,6 +45,7 @@ Got hands-on with a sample shell — accessed it and ran basic commands to see h
 **Key takeaway:** Even simple webshells let attackers run system commands, browse files, upload more tools — often as the web server user (www-data, etc.).
 
 Question:
+
 - Access the shell and determine which account you have access to by running the `whoami` command. **www-data**
 
 <img width="618" height="231" alt="2 1" src="https://github.com/user-attachments/assets/f6265f9e-222b-4709-8c11-8b0a00956970" />
@@ -63,6 +65,7 @@ Hunted through web server logs (Apache/Nginx style) for signs of upload + execut
 - Unusual query strings or HTTP methods
 
 Questions:
+
 - What data in web logs often contains the command sent to a web shell? **Query Strings**
 - What auditd syscall would confirm that a file was written to disk following a suspicious POST request to `/upload.php`? **creat**
 
@@ -82,6 +85,7 @@ Analyzed PCAP for webshell traffic — often small, frequent HTTP GET/POST with 
 **Key takeaway:** Follow streams to see cmd output in responses; look for non-standard User-Agents or high-frequency requests to one endpoint.
 
 Questions:
+
 -Which IP address likely belongs to the attacker? 203.0.113.66
 
 <img width="725" height="459" alt="3 1" src="https://github.com/user-attachments/assets/72e64908-9e58-4aa4-b7c5-919159b8002b" />
